@@ -4,6 +4,8 @@ const app = express() //用app來代表呼叫express()，呼叫express()會啟�
 const port = 3000
 //載入樣板引擎
 const { engine } = require('express-handlebars')
+//載入js功能
+const generatorTrashtalk = require('./generator_trashtalk')
 
 app.engine('.hbs', engine({ extname: '.hbs',defaultLayour: 'main' }))
 app.set('view engine', '.hbs')
@@ -13,8 +15,11 @@ app.set('views', './views')
 app.use(express.static('public'))
 
 app.get('/',(req,res)=>{
-    res.render('index')
+    let option = req.query
+    let trashtalk = generatorTrashtalk(option)
+    res.render('index', { trashtalk, option })
 })
+
 
 //設定伺服器監聽port3000，應用程式會處理任何從port3000進來的瀏覽器request
 app.listen(port, ()=>{
