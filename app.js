@@ -9,6 +9,8 @@ app.engine('.hbs', engine({ extname: '.hbs',defaultLayour: 'main' }))
 app.set('view engine', '.hbs')
 app.set('views', './views')
 
+//載入靜態檔案
+app.use(express.static('public'))
 
 app.get('/',(req,res)=>{
     res.render('index')
