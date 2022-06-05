@@ -8,7 +8,7 @@
                             <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="card-img-top" alt="engineer photo">
                         </div>
                         <div class="card-body text-center">
-                            <input type="radio" name="occupation" id="engineer" value="engineer">
+                            <input type="radio" name="occupation" id="engineer" value="engineer" {{#check option.occupation "engineer"}}checked{{/check}}>
                             <span>工程師</span>
                         </div>
                     </label>
@@ -20,7 +20,7 @@
                             <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" class="card-img-top" alt="designer photo">
                         </div>
                         <div class="card-body text-center">
-                            <input type="radio" name="occupation" id="designer" value="designer">
+                            <input type="radio" name="occupation" id="designer" value="designer" {{#check option.occupation "designer"}}checked{{/check}}>
                             <span>設計師</span>
                         </div>
                     </label>
@@ -32,7 +32,7 @@
                             <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" class="card-img-top" alt="entrepreneur photo">
                         </div>
                         <div class="card-body text-center">
-                            <input type="radio" name="occupation" id="entrepreneur" value="entrepreneur">
+                            <input type="radio" name="occupation" id="entrepreneur" value="entrepreneur" {{#check option.occupation "entrepreneur"}}checked{{/check}}>
                             <span>創業家</span>
                         </div>
                     </label>
