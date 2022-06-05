@@ -1,13 +1,13 @@
 <div class="container d-flex flex-column justify-content-center">
     <div class="row form-grop my-3">
         <form action="/" method="get">
-            <div class="card-container card-group mb-3">
+            <div class="card-container card-group my-4">
                 <div class="card" style="width: 18rem;">
                     <label for="engineer">
                         <div class="photo-container">
                             <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="card-img-top" alt="engineer photo">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <input type="radio" name="occupation" id="engineer" value="engineer">
                             <span>工程師</span>
                         </div>
@@ -19,7 +19,7 @@
                         <div class="photo-container">
                             <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" class="card-img-top" alt="designer photo">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <input type="radio" name="occupation" id="designer" value="designer">
                             <span>設計師</span>
                         </div>
@@ -31,7 +31,7 @@
                         <div class="photo-container">
                             <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" class="card-img-top" alt="entrepreneur photo">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <input type="radio" name="occupation" id="entrepreneur" value="entrepreneur">
                             <span>創業家</span>
                         </div>
@@ -46,6 +46,6 @@
         </form>
     </div>
     <div class="row result-container my-2">
-        <div class="text-center">{{trashtalk}}</div>
+        <div class="text-center trashtalk">{{trashtalk}}</div>
     </div>
 </div>
