@@ -9,10 +9,10 @@
 - 垃圾話組合共有三種職業並搭配四種情境、四種語末形容詞與四種emoji
 
 ## 環境需求
-需在本地安裝 node.js(本專案使用版本為v16.14.0)
-使用的npm套件為
-express v14.18.1
-express-handlebars v6.0.6
+需在本地安裝 node.js(本專案使用版本為v16.14.0)  
+使用的npm套件為  
+express v14.18.1  
+express-handlebars v6.0.6  
 
 ## 垃圾話產生器本地電腦安裝與執行步驟
 開啟終端機進行以下指令:
@@ -23,3 +23,6 @@ express-handlebars v6.0.6
 5. 當終端機顯示 `App is running on http://localhost:3000`，表示此專案已成功在本地伺服器執行
 6. 開啟瀏覽器進入網址`http://localhost:3000`，即可使用垃圾話產生器
 7. 在終端機按下`Ctrl+C`即可停止專案執行
+
+## 備註
+此專案材料來源為AC教案
